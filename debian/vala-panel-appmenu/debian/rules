@@ -1,25 +1,14 @@
 #!/usr/bin/make -f
-# See debhelper(7) (uncomment to enable)
-# output every command that modifies files on the build system.
-DH_VERBOSE = 1
 
-# see EXAMPLES in dpkg-buildflags(1) and read /usr/share/dpkg/*
-DPKG_EXPORT_BUILDFLAGS = 1
-include /usr/share/dpkg/default.mk
+#DH_VERBOSE=1
+DHFLAGS=--parallel
 
-# see FEATURE AREAS in dpkg-buildflags(1)
 #export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#DPKG_EXPORT_BUILDFLAGS = 1
+#include /usr/share/dpkg/buildflags.mk
 
-# see ENVIRONMENT in dpkg-buildflags(1)
-# package maintainers to append CFLAGS
-#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
-# package maintainers to append LDFLAGS
-#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-
-
-# main packaging script based on dh7 syntax
 %:
-	dh $@
+	dh $@ $(DHFLAGS)
 
 override_dh_auto_clean:
 	dh_auto_clean --buildsystem=cmake
@@ -28,23 +17,25 @@ override_dh_auto_build:
 	dh_auto_build --buildsystem=cmake
 
 override_dh_install:
-	dh_install
+	dh_install --list-missing
 
 override_dh_auto_configure:
 	dh_auto_configure --buildsystem=cmake -- \
 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
+		-DENABLE_BUDGIE=ON \
 		-DENABLE_MATE=ON \
 		-DENABLE_VALAPANEL=OFF \
 		-DENABLE_XFCE=ON
 
 override_dh_strip:
-	dh_strip --package=mate-applet-vala-panel-appmenu --dbg-package=mate-applet-vala-panel-appmenu-dbg
-	dh_strip --package=xfce4-vala-panel-appmenu-plugin --dbg-package=xfce4-vala-panel-appmenu-plugin-dbg
-#	dh_strip --package=vala-panel-appmenu --dbg-package=vala-panel-appmenu-dbg
+	dh_strip --package=budgie-appmenu-applet
+	dh_strip --package=mate-applet-appmenu
+	dh_strip --package=xfce4-appmenu-plugin
+#	dh_strip --package=vala-panel-appmenu
 
 override_dh_makeshlibs:
-	dh_makeshlibs -Xmate -Xxfce4
-#	dh_makeshlibs -Xmate -Xvala-panel -Xxfce4
+	dh_makeshlibs -Xbudgie -Xmate -Xxfce4
+#	dh_makeshlibs -Xbudgie -Xmate -Xvala-panel -Xxfce4
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
