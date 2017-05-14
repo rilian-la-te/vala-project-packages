@@ -1,0 +1,2 @@
+version=4
+https://github.com/rilian-la-te/vala-panel/releases .*/vala-panel-(\d\S+)\.tar\.gz
