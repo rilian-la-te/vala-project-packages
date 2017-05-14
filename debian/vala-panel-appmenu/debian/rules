@@ -32,7 +32,6 @@ override_dh_auto_install:
 	dh_auto_install
 	mkdir -p $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/appmenu-budgie
 	mv $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/budgie-desktop/plugins/* $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/appmenu-budgie
-	mv $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/libappmenu-budgie.so $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/appmenu-budgie
 
 override_dh_installgsettings:
 ifeq ($(shell dpkg-vendor --derives-from Ubuntu && echo ubuntu),ubuntu)
