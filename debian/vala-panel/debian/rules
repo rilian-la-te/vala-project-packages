@@ -24,10 +24,8 @@ override_dh_auto_configure:
 	dh_auto_configure --buildsystem=cmake -- \
 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DGSETTINGS_COMPILE=OFF \
 		-DENABLE_WNCK=ON
-		#-DGSETTINGS_COMPILE=OFF \
-		#-DCMAKE_INSTALL_SYSCONFDIR=/etc
 
 override_dh_strip:
 	dh_strip --package=vala-panel
