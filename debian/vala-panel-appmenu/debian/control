@@ -13,9 +13,9 @@ Build-Depends: budgie-core-dev,
                libwnck-3-dev (>= 3.4.0),
                libxfce4panel-2.0-dev,
                libxfconf-0-dev,
+               vala-panel-dev (>= 0.3.60),
                valac (>= 0.24.0),
                xfce4-panel-dev (>= 4.11.2),
-#vala-panel-dev               
 Standards-Version: 3.9.8
 Homepage: https://github.com/rilian-la-te/vala-panel-appmenu
 Vcs-Git: https://github.com/rilian-la-te/vala-panel-appmenu.git
@@ -82,23 +82,23 @@ Description: Application Menu plugin for mate-panel
  .
  This package provides the plugin for MATE.
 
-#Package: vala-panel-appmenu
-#Architecture: any
-#Depends: bamfdaemon,
-#         vala-panel-appmenu-common (= ${source:Version}),
-#         ${misc:Depends},
-#         ${shlibs:Depends},
-#Recommends: appmenu-qt,
-#            appmenu-qt5,
-#            libdbusmenu-glib4,
-#            libdbusmenu-gtk3-4,
-#            libdbusmenu-gtk4,
-#            unity-gtk2-module,
-#            unity-gtk3-module,
-#Description: Application Menu plugin for vala-panel
-# This is an Application Menu (Global Menu) plugin. It is built using
-# the Unity protocol and libraries and provides all features found in
-# the Unity implementation.
+Package: vala-panel-appmenu
+Architecture: any
+Depends: bamfdaemon,
+         vala-panel-appmenu-common (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: appmenu-qt,
+            appmenu-qt5,
+            libdbusmenu-glib4,
+            libdbusmenu-gtk3-4,
+            libdbusmenu-gtk4,
+            unity-gtk2-module,
+            unity-gtk3-module,
+Description: Application Menu plugin for vala-panel
+ This is an Application Menu (Global Menu) plugin. It is built using
+ the Unity protocol and libraries and provides all features found in
+ the Unity implementation.
 
 Package: vala-panel-appmenu-common
 Architecture: all
