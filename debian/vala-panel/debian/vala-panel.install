@@ -1,7 +1,4 @@
-etc/xdg/*
 usr/bin/*
 usr/lib/*/libvalapanel.so.*
 usr/share/glib-2.0/schemas/org.valapanel.gschema.xml
 usr/share/glib-2.0/schemas/org.valapanel.toplevel.gschema.xml
-usr/share/icons/*
-usr/share/locale/*
