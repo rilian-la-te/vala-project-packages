@@ -3,12 +3,13 @@ Upstream-Name: vala-panel
 Source: <https://github.com/rilian-la-te/vala-panel>
 
 Files: *
-Copyright: <2014-2015> <Konstantin P. <ria.freelander@gmail.com> >
-           <2006-2014> <LXDE Developers>
+Copyright: 2014-2017 <Konstantin P. <ria.freelander@gmail.com>
+           2006-2014 <LXDE Developers>
 License: LGPL-3.0+
 
 Files: debian/*
-Copyright: 2015 Konstantin P. <ria.freelander@gmail.com>
+Copyright: 2015-2017 Konstantin P. <ria.freelander@gmail.com>
+           2017 Martin Wimpress <martin.wimpress@ubuntu.com>
 License: LGPL-3.0+
 
 License: LGPL-3.0+
