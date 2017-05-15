@@ -8,7 +8,7 @@ Build-Depends: cmake (>= 2.8.0),
                libgtk-3-dev (>= 3.12.0),
                libpeas-dev (>= 1.2.0),
                libwnck-3-dev (>= 3.4.0),
-               valac (>= 0.24.0),
+               valac (>= 0.34.0),
 Standards-Version: 3.9.8
 Homepage: https://github.com/rilian-la-te/vala-panel
 Vcs-Git: https://github.com/rilian-la-te/vala-panel.git
@@ -17,12 +17,22 @@ Vcs-Browser: https://github.com/rilian-la-te/vala-panel
 Package: vala-panel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends},
-Depends: ${misc:Depends},
+Depends: vala-panel-common (= ${source:Version}),
+         ${misc:Depends},
          ${shlibs:Depends},
 Replaces: libvalapanel0,
 Description: A GTK+ 3 desktop panel.
  Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
  from LXPanel.
+
+Package: vala-panel-common
+Architecture: all
+Depends: ${misc:Depends},
+Description: A GTK+ 3 desktop panel - common
+ Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
+ from LXPanel.
+ .
+ This package provides common files.
 
 Package: vala-panel-dev
 Section: libdevel
@@ -40,7 +50,8 @@ Description: A GTK+ 3 desktop panel - development files
 Package: vala-panel-plugins-base
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends},
-Depends: ${misc:Depends},
+Depends: vala-panel (= ${binary:Version}),
+         ${misc:Depends},
          ${shlibs:Depends},
 Description: Plugins for vala-panel - non X11 plugins.
  Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
@@ -52,7 +63,8 @@ Description: Plugins for vala-panel - non X11 plugins.
 Package: vala-panel-plugins-wnck
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends},
-Depends: libx11-6,
+Depends: vala-panel (= ${binary:Version}),
+         libx11-6,
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Plugins for vala-panel - X11 plugins.
