@@ -1,4 +1,4 @@
-usr/lib/*/libvalapanel.so
-usr/share/vala/*
 usr/include/vala-panel/*
+usr/lib/*/libvalapanel.so
 usr/lib/*/pkgconfig/*
+usr/share/vala/*

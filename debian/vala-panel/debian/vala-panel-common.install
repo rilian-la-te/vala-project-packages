@@ -1,0 +1,7 @@
+etc/xdg/*
+usr/share/applications/org.valapanel.application.desktop
+usr/share/icons/*
+usr/share/locale/*
+usr/share/man/man1/vala-panel.1
+usr/share/metainfo/org.valapanel.application.appdata.xml
+usr/share/vala-panel/images/
