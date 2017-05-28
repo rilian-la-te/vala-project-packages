@@ -1,3 +1,9 @@
+vala-panel-appmenu (0.5.1-1) artful; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <code@flexion.org>  Sun, 28 May 2017 16:22:07 +0100
+
 vala-panel-appmenu (0.5.0-1) artful; urgency=medium
 
   * New upstream release.

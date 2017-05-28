@@ -1,3 +1,9 @@
+vala-panel (0.3.64-1) artful; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <code@flexion.org>  Sun, 28 May 2017 16:25:22 +0100
+
 vala-panel (0.3.63-1) artful; urgency=medium
 
   *  New upstream release.
