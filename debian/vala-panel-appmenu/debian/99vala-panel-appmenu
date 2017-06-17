@@ -7,4 +7,3 @@ else
 fi
 export GTK_MODULES
 export UBUNTU_MENUPROXY=1
-export APPMENU_DISPLAY_BOTH=1
