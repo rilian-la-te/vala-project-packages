@@ -2,15 +2,59 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: vala-panel
 Source: <https://github.com/rilian-la-te/vala-panel>
 
-Files: *
+Files: app/*
+       applets/*
+       cmake/*
+       lib/*
+       runner/*
+       vapi/*
 Copyright: 2014-2017 <Konstantin P. <ria.freelander@gmail.com>
-           2006-2014 <LXDE Developers>
+License: LGPL-3.0+
+
+Files: applets/wnck/icontasks/*
+Copyright: 2014-2016 Ikey Doherty <ikey@solus-project.com>
+License: LGPL-3.0+
+
+Files: applets/wnck/tasklist-xfce/tasklist-widget.c
+       applets/wnck/tasklist-xfce/tasklist-widget.h
+Copyright: 2008-2010 Nick Schermer <nick@xfce.org>
+License: LGPL-3.0+
+
+Files: applets/wnck/tasklist-xfce/xfce-arrow-button.c
+       applets/wnck/tasklist-xfce/xfce-arrow-button.h
+Copyright: 2006-2007 Jasper Huijsmans <jasper@xfce.org>
+           2008-2010 Nick Schermer <nick@xfce.org>
+License: LGPL-3.0+
+
+Files: applets/wnck/xembed/xembed-ccode.c
+       applets/wnck/xembed/xembed-ccode.h
+Copyright: 2008-2014 LxDE Developers
+License: LGPL-3.0+
+
+Files: lib/guuid.c
+       lib/guuid.c
+Copyright: 2013-2015, 2017 Red Hat, Inc.
 License: LGPL-3.0+
 
 Files: debian/*
 Copyright: 2015-2017 Konstantin P. <ria.freelander@gmail.com>
            2017 Martin Wimpress <martin.wimpress@ubuntu.com>
 License: LGPL-3.0+
+
+Files: .clang-format
+       .configure-custom.sh
+       configure
+       vala-panel.pc.cmake
+       CMakeLists.txt
+       CMakeLists.txt.user
+       data/*
+       rpm/*
+       po/*
+       README.md
+Copyright: *No copyright*
+License: LGPL-3.0+
+Comment:
+ Appropriately apply licenses as found in LICENSE
 
 License: LGPL-3.0+
  This package is free software; you can redistribute it and/or

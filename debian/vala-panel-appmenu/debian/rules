@@ -32,8 +32,6 @@ override_dh_auto_install:
 	dh_auto_install
 	mkdir -p $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/appmenu-budgie
 	mv $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/budgie-desktop/plugins/* $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/appmenu-budgie
-	#mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/mate-panel
-	#mv $(CURDIR)/debian/tmp/usr/lib/mate-panel/appmenu-mate $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/mate-panel/
 
 override_dh_installgsettings:
 ifeq ($(shell dpkg-vendor --derives-from Ubuntu && echo ubuntu),ubuntu)
