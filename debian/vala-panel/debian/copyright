@@ -36,6 +36,60 @@ Files: lib/guuid.c
 Copyright: 2013-2015, 2017 Red Hat, Inc.
 License: LGPL-3.0+
 
+Files: po/*.po
+Copyright: Ainur <ainur.shakirov.tt@gmail.com>
+           alexandre raymond <alekcxjo@gmail.com>
+           Algimantas Margevičius <algimantas@margevicius.lt>
+           Anari <anari.jalakas@gmail.com>
+           Andika Triwidada <andika@gmail.com>
+           Andriy Grytsenko <andrej@rep.kiev.ua>
+           A S Alam <aalam@users.sf.net>
+           Asier_Iturralde_Sarasola <asier.iturralde@gmail.com>
+           Bendegúz <gyonkibendeguz@gmail.com>
+           Daniele Forsi <daniele@forsi.it>
+           Duy Hung <nguyentieuhau@gmail.com>
+           F <friedel@translate.org.za>
+           George <forfolias@gmail.com>
+           Gheyret <gheyret@gmail.com>
+           Gunleif <gunleif@gmail.com>
+           Henrique P. <zehrique@gmail.com>
+           H.Humpel <H.Humpel@gmx.de>
+           Hironao <hirkmt@gmail.com>
+           Hugo Florentino <sysadmin@cips.cu>
+           Ivan Masár <helix84@centrum.sk>
+           Ivica <ikoli@yahoo.com>
+           Jan Helebrant <jhelebrant@seznam.cz>
+           Jay Alexander Fleming <tito.nehru.naser@gmail.com>
+           Josep Sanchez <papapep@gmail.com>
+           Juhani <juhaninumminen0@gmail.com>
+           Julien Henry <Julius22@laposte.net>
+           Karl Ove Hufthammer <karl@huftis.org>
+           Klemen Košir <klemen913@gmail.com>
+           Martin <brother@bsnet.se>
+           Miguel Anxo Bouzada <mbouzada@gmail.com>
+           Mișu <dumol@l10n.ro>
+           Mostafa <info@mostafadaneshvar.com>
+           Muhammad Ali Makki <makki.ma@gmail.com>
+           Payne Samad Loh <sploh77@yahoo.com>
+           Peter <flywheel@illogical.dk>
+           Piotr Sokół <psokol@jabster.pl>
+           Pjotr <pjotrvertaalt@gmail.com>
+           PraveenIlla <mail2ipn@gmail.com>
+           Sadia Afroz <sadia@ankur.org.bd>
+           Sam <wilsonsamm@hotmail.com>
+           Sankarshan <sankarshan.mukhopadhyay@gmail.com>
+           Seong-ho Cho <darkcircle.0426@gmail.com>
+           Sérgio Marques <smarquespt@gmail.com>
+           sokha <atol@sokha.net>
+           Steve <yorvik.ubunto@gmail.com>
+           vgezer <volkangezer@gmail.com>
+           wwycheuk <wwycheuk@gmail.com>
+           Wylmer Wang <wantinghard@gmail.com>
+           Yaron <sh.yaron@gmail.com>
+           Мікалай <crom-a@tut.by>
+           Радослав Иванов <reckku@gmail.com>
+License: LGPL-3.0+
+
 Files: debian/*
 Copyright: 2015-2017 Konstantin P. <ria.freelander@gmail.com>
            2017 Martin Wimpress <martin.wimpress@ubuntu.com>
@@ -48,8 +102,11 @@ Files: .clang-format
        CMakeLists.txt
        CMakeLists.txt.user
        data/*
+       po/CMakeLists.txt
+       po/LINGUAS.in
+       po/stamp-it
+       po/vala-panel.pot
        rpm/*
-       po/*
        README.md
 Copyright: *No copyright*
 License: LGPL-3.0+
