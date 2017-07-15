@@ -1,3 +1,4 @@
 usr/bin/*
+usr/share/applications/org.valapanel.application.desktop
 usr/share/glib-2.0/schemas/org.valapanel.gschema.xml
 usr/share/glib-2.0/schemas/org.valapanel.toplevel.gschema.xml
