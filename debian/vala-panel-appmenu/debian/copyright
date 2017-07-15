@@ -28,6 +28,7 @@ Files: .clang-format
        data/*
        rpm/*
        po/*
+       LICENSE
        README.md
 Copyright: *No copyright*
 License: LGPL-3.0+ or Expat
