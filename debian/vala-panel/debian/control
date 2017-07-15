@@ -11,8 +11,8 @@ Build-Depends: cmake (>= 2.8.0),
                valac (>= 0.34.0),
 Standards-Version: 4.0.0
 Homepage: https://github.com/rilian-la-te/vala-panel
-Vcs-Git: https://github.com/rilian-la-te/vala-panel.git
-Vcs-Browser: https://github.com/rilian-la-te/vala-panel
+Vcs-Git: https://github.com/rilian-la-te/vala-project-packages.git
+Vcs-Browser: https://github.com/rilian-la-te/vala-project-packages
 
 Package: vala-panel
 Architecture: any
