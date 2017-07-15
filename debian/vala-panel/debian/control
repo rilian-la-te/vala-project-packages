@@ -18,7 +18,7 @@ Vcs-Browser: https://github.com/rilian-la-te/vala-project-packages
 Package: vala-panel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends},
-Depends: libvalapanel (= ${binary:Version}),
+Depends: libvalapanel0 (= ${binary:Version}),
          vala-panel-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
