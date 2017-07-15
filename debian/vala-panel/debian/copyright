@@ -107,6 +107,7 @@ Files: .clang-format
        po/stamp-it
        po/vala-panel.pot
        rpm/*
+       LICENSE
        README.md
 Copyright: *No copyright*
 License: LGPL-3.0+
