@@ -36,7 +36,7 @@ Description: A GTK+ 3 desktop panel - common
  .
  This package provides common files.
 
-Package: libvalapanel
+Package: libvalapanel0
 Section: libs
 Architecture: any
 Depends: ${misc:Depends},
@@ -47,10 +47,10 @@ Description: library for Vala Panel
  .
  This package contains the Vala Panel library.
 
-Package: libvalapanel-dev
+Package: libvalapanel0-dev
 Section: libdevel
 Architecture: any
-Depends: libvalapanel (= ${binary:Version}),
+Depends: libvalapanel0 (= ${binary:Version}),
          ${misc:Depends},
 Description: A GTK+ 3 desktop panel - development files
  Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
