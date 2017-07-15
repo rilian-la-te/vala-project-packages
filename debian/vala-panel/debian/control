@@ -9,7 +9,7 @@ Build-Depends: cmake (>= 2.8.0),
                libpeas-dev (>= 1.2.0),
                libwnck-3-dev (>= 3.4.0),
                valac (>= 0.34.0),
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: https://github.com/rilian-la-te/vala-panel
 Vcs-Git: https://github.com/rilian-la-te/vala-panel.git
 Vcs-Browser: https://github.com/rilian-la-te/vala-panel
