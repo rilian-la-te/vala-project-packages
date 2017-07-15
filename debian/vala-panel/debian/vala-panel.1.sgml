@@ -145,7 +145,7 @@ manpage.1: manpage.sgml
         <term><option>--profile=<replaceable>profile name</replaceable></option></term>
         <listitem>
           <para>Runs panel with specified profile. This option will have an effect only if panel is not runs now.
-		There are three preinstalled profiles: default, two_panels and appmenu.</para>
+		There are three pre-installed profiles: default, two_panels and appmenu.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -174,7 +174,7 @@ manpage.1: manpage.sgml
              behaviour of <application>&dhpackage;</application>.
 	     It contains subfolders only, and it must contain at least one subfolder after a first run of <application>&dhpackage;</application>.
 	     Each subfolder is a profile for panel, and its name used as profile name with profile options.
-	     See default profiles for futher reference.
+	     See default profiles for further reference.
         </listitem>
       </varlistentry>
     </variablelist>
