@@ -85,3 +85,13 @@ Description: Plugins for vala-panel - X11 plugins.
  .
  This package contains X11 plugins for vala-panel: tasklist,
  system tray, and others.
+
+Package: vala-panel-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+Description: Desktop panel written in Vala and GTK+ 3. (documentation files)
+ Vala Panel is a rewrite of SimplePanel. It is a GTK+ 3 desktop panel
+ written in Vala and based on ideas from LXPanel.
+ .
+ This package contains the documentation files of Vala Panel.
