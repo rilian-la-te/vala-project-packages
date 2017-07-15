@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 #DH_VERBOSE=1
-DHFLAGS=--parallel
+DHFLAGS=--buildsystem=cmake --parallel
 
 #export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 #DPKG_EXPORT_BUILDFLAGS = 1
@@ -10,18 +10,15 @@ DHFLAGS=--parallel
 %:
 	dh $@ $(DHFLAGS)
 
-override_dh_auto_clean:
-	dh_auto_clean --buildsystem=cmake
-
 override_dh_auto_build:
 	docbook-to-man debian/vala-panel.1.sgml > debian/vala-panel.1
-	dh_auto_build --buildsystem=cmake
+	dh_auto_build
 
 override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
-	dh_auto_configure --buildsystem=cmake -- \
+	dh_auto_configure \
 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DGSETTINGS_COMPILE=OFF \
