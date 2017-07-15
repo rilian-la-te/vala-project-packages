@@ -1,0 +1,2 @@
+# vala-panel-common includes a man page for vala-panel-runner
+vala-panel: binary-without-manpage usr/bin/vala-panel-runner
