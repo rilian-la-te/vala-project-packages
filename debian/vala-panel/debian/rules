@@ -23,10 +23,5 @@ override_dh_auto_configure:
 		-DGSETTINGS_COMPILE=OFF \
 		-DENABLE_WNCK=ON
 
-override_dh_strip:
-	dh_strip --package=vala-panel
-	dh_strip --package=vala-panel-plugins-base
-	dh_strip --package=vala-panel-plugins-wnck
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
