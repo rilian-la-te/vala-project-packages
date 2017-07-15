@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Konstantin P. <ria.freelander@gmail.com>
 Build-Depends: cmake (>= 2.8.0),
-               debhelper (>= 9),
+               debhelper (>= 10),
                docbook-to-man,
                libgtk-3-dev (>= 3.22.0),
                libpeas-dev (>= 1.2.0),
