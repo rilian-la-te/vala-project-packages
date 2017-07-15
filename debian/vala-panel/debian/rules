@@ -7,13 +7,13 @@ DHFLAGS=--buildsystem=cmake --parallel
 
 override_dh_auto_build:
 	docbook-to-man debian/vala-panel.1.sgml > debian/vala-panel.1
-	dh_auto_build
+	dh_auto_build $(DHFLAGS)
 
 override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
-	dh_auto_configure \
+	dh_auto_configure $(DHFLAGS) -- \
 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DGSETTINGS_COMPILE=OFF \
