@@ -1,7 +1,7 @@
 Source: vala-panel-appmenu
 Section: x11
 Priority: optional
-Maintainer: Konstantin P. <ria.freelander@gmail.com>
+Maintainer: Martin Wimpress <martin.wimpress@ubuntu.com>
 Build-Depends: budgie-core-dev,
                cmake (>= 2.8.0),
                debhelper (>= 10),
