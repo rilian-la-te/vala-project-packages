@@ -16,7 +16,7 @@ Build-Depends: budgie-core-dev,
                vala-panel-dev (>= 0.3.60),
                valac (>= 0.24.0),
                xfce4-panel-dev (>= 4.11.2),
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: https://github.com/rilian-la-te/vala-panel-appmenu
 Vcs-Git: https://github.com/rilian-la-te/vala-panel-appmenu.git
 Vcs-Browser: https://github.com/rilian-la-te/vala-panel-appmenu
