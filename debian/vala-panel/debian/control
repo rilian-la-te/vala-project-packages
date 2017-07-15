@@ -23,16 +23,16 @@ Depends: libvalapanel (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Replaces: libvalapanel0,
-Description: A GTK+ 3 desktop panel.
- Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
- from LXPanel.
+Description: Desktop panel written in Vala and GTK+ 3.
+ Vala Panel is a rewrite of SimplePanel. It is a GTK+ 3 desktop panel
+ written in Vala and based on ideas from LXPanel.
 
 Package: vala-panel-common
 Architecture: all
 Depends: ${misc:Depends},
-Description: A GTK+ 3 desktop panel - common
- Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
- from LXPanel.
+Description: Vala Panel - common files
+ Vala Panel is a rewrite of SimplePanel. It is a GTK+ 3 desktop panel
+ written in Vala and based on ideas from LXPanel.
  .
  This package provides common files.
 
@@ -42,8 +42,8 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Description: library for Vala Panel
- Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
- from LXPanel.
+ Vala Panel is a rewrite of SimplePanel. It is a GTK+ 3 desktop panel
+ written in Vala and based on ideas from LXPanel.
  .
  This package contains the Vala Panel library.
 
@@ -52,9 +52,9 @@ Section: libdevel
 Architecture: any
 Depends: libvalapanel0 (= ${binary:Version}),
          ${misc:Depends},
-Description: A GTK+ 3 desktop panel - development files
- Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
- from LXPanel.
+Description: library for Vala Panel - development files
+ Vala Panel is a rewrite of SimplePanel. It is a GTK+ 3 desktop panel
+ written in Vala and based on ideas from LXPanel.
  .
  This package contains header files for building plugins or window
  managers with vala-panel support.
@@ -66,8 +66,8 @@ Depends: vala-panel (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Plugins for vala-panel - non X11 plugins.
- Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
- from LXPanel.
+ Vala Panel is a rewrite of SimplePanel. It is a GTK+ 3 desktop panel
+ written in Vala and based on ideas from LXPanel.
  .
  This package contains main plugins for vala-panel: clock, launchbar,
  applications menu and so on.
@@ -80,8 +80,8 @@ Depends: vala-panel (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Plugins for vala-panel - X11 plugins.
- Vala Panel is GTK+ 3 desktop panel written in Vala and based on ideas
- from LXPanel.
+ Vala Panel is a rewrite of SimplePanel. It is a GTK+ 3 desktop panel
+ written in Vala and based on ideas from LXPanel.
  .
  This package contains X11 plugins for vala-panel: tasklist,
  system tray, and others.
