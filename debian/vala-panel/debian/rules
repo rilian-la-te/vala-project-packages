@@ -11,6 +11,7 @@ include /usr/share/dpkg/buildflags.mk
 
 override_dh_auto_build:
 	docbook-to-man debian/vala-panel.1.sgml > debian/vala-panel.1
+	docbook-to-man debian/vala-panel-runner.1.sgml > debian/vala-panel-runner.1
 	dh_auto_build $(DHFLAGS)
 
 override_dh_install:
