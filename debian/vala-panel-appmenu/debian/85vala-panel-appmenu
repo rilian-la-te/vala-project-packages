@@ -1,4 +1,4 @@
-# Load the unity-gtk-module, required by vala-panel-appmenu
+# This file is sourced by Xsession(5), not executed.
 if [ -z "$GTK_MODULES" ]; then
     GTK_MODULES="unity-gtk-module"
 else

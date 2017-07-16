@@ -1,2 +1,2 @@
-debian/vala-panel-appmenu.sh etc/profile.d/
+debian/85vala-panel-appmenu etc/X11/Xsession.d/
 usr/share/locale/*
