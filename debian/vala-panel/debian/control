@@ -47,7 +47,7 @@ Description: library for Vala Panel
  .
  This package contains the Vala Panel library.
 
-Package: libvalapanel0-dev
+Package: libvalapanel-dev
 Section: libdevel
 Architecture: any
 Depends: libvalapanel0 (= ${binary:Version}),
