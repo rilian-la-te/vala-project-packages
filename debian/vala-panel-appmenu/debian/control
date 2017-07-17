@@ -60,7 +60,7 @@ Description: Application Menu plugin for xfce4-panel
  the Unity protocol and libraries and provides all features found in
  the Unity implementation.
  .
- This package provides the plugin for XFCE.
+ This package provides the plugin for Xfce.
 
 Package: mate-applet-appmenu
 Architecture: any
