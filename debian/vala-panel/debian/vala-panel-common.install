@@ -1,5 +1,5 @@
+debian/vala-panel-runner.1 usr/share/man/man1
 etc/xdg/*
-usr/share/applications/org.valapanel.application.desktop
 usr/share/icons/*
 usr/share/locale/*
 usr/share/man/man1/vala-panel.1

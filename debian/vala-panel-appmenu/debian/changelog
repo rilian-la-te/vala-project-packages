@@ -2,4 +2,4 @@ vala-panel-appmenu (0.5.2-0ubuntu1) artful; urgency=medium
 
   * Initial upload. (LP: #1699334)
 
- -- Martin Wimpress <code@flexion.org>  Tue, 20 Jun 2017 21:59:22 +0100
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Sat, 15 Jul 2017 23:32:12 +0100
