@@ -14,7 +14,7 @@ Files: cmake/*
        dbusmenu/*
        vapi/*
        lib/*
-Copyright: 2014-2017 <Konstantin Pugin <ria.freelander@gmail.com>
+Copyright: 2014-2017 Konstantin Pugin <ria.freelander@gmail.com>
 License: LGPL-3.0+
 
 Files: debian/*
