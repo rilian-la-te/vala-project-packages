@@ -27,17 +27,6 @@ override_dh_auto_install:
 	mv $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/libappmenu-budgie.so $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/appmenu-budgie
 	mv $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/budgie-desktop/plugins/* $(CURDIR)/debian/tmp/usr/lib/budgie-desktop/plugins/appmenu-budgie
 
-override_dh_installgsettings:
-ifeq ($(shell dpkg-vendor --derives-from Ubuntu && echo ubuntu),ubuntu)
-	dh_installgsettings --priority=15
-endif
-
-override_dh_strip:
-	dh_strip --package=budgie-appmenu-applet
-	dh_strip --package=mate-applet-appmenu
-	dh_strip --package=xfce4-appmenu-plugin
-	dh_strip --package=vala-panel-appmenu
-
 override_dh_makeshlibs:
 	dh_makeshlibs -Xbudgie -Xmate -Xvala-panel -Xxfce4
 
