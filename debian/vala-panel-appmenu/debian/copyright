@@ -26,7 +26,7 @@ Files: cmake/GResource.cmake
 Copyright: 2013 Venom authors and contributors
 License: GPL-3.0+
 
-Files: cmake/GetGitRevisionDescription.cmake
+Files: cmake/GetGitRevisionDescription.cmake*
 Copyright: 2009-2010 Iowa State University
 License: Boost-Software-License-1.0
 
@@ -44,7 +44,7 @@ License: LGPL-3.0+
 Files: .clang-format
        CMakeLists.txt
        CMakeLists.txt.user
-       cmake/FallbackVersion.cmake.in
+       cmake/FallbackVersion.cmake*
        cmake/FindGLibTools.cmake
        cmake/Format.cmake
        cmake/GLibHelpers.cmake
@@ -115,7 +115,7 @@ License: Boost-Software-License-1.0
  ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  DEALINGS IN THE SOFTWARE.
 
-License: GPL-3+
+License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify it under
  the terms of the GNU General Public License as published by the Free Software
  Foundation, either version 3 of the License, or (at your option) any later
