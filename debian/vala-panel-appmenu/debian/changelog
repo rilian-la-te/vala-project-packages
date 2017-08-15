@@ -1,3 +1,9 @@
+vala-panel-appmenu (0.5.3-0ubuntu1) artful; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 14 Aug 2017 23:03:02 +0100
+
 vala-panel-appmenu (0.5.2-0ubuntu1) artful; urgency=medium
 
   * Initial upload. (LP: #1699334)
