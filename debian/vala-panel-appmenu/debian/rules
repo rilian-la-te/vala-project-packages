@@ -19,6 +19,7 @@ override_dh_auto_configure:
 		-DENABLE_MATE=ON \
 		-DENABLE_VALAPANEL=ON \
 		-DENABLE_XFCE=ON \
+		-DMAKE_BOLD_APPNAME=ON \
 		-DCMAKE_INSTALL_LIBEXECDIR=/usr/lib
 
 override_dh_auto_install:
