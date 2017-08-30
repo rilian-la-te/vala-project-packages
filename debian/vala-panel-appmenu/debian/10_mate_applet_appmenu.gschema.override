@@ -1,0 +1,2 @@
+[com.canonical.unity-gtk-module:MATE]
+blacklist=['mate-menu','mate-panel','mate-indicator-applet','mate-indicator-applet-appmenu','mate-indicator-applet-complete']
