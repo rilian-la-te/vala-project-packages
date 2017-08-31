@@ -1,1 +1,2 @@
+debian/10_budgie_appmenu_applet.gschema.override usr/share/glib-2.0/schemas/
 usr/lib/budgie-desktop

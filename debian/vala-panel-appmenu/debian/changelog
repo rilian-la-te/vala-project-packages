@@ -1,3 +1,10 @@
+vala-panel-appmenu (0.5.3-0ubuntu2) artful; urgency=medium
+
+  * Add gschema overrides to add the appropriate unity-gtk-module
+    blacklist for Budgie and MATE. (LP: #1705653)
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 30 Aug 2017 11:08:34 +0100
+
 vala-panel-appmenu (0.5.3-0ubuntu1) artful; urgency=medium
 
   * New upstream release.
