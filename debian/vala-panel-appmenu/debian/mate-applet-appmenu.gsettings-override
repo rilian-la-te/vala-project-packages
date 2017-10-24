@@ -1,2 +1,0 @@
-[com.canonical.unity-gtk-module]
-blacklist=["acroread","emacs","emacs23","emacs23-lucid","emacs24","emacs24-lucid","mate-panel"]

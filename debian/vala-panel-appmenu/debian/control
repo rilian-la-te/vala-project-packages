@@ -1,25 +1,24 @@
 Source: vala-panel-appmenu
 Section: x11
 Priority: optional
-Maintainer: Konstantin P. <ria.freelander@gmail.com>
+Maintainer: Martin Wimpress <martin.wimpress@ubuntu.com>
 Build-Depends: budgie-core-dev,
                cmake (>= 2.8.0),
-               debhelper (>= 9),
-               dpkg-dev (>= 1.16.1.1),
+               debhelper (>= 10),
                libbamf3-dev,
                libgtk-3-dev (>= 3.12.0),
                libmate-panel-applet-dev (>= 1.16),
                libpeas-dev (>= 1.2.0),
+               libvalapanel-dev (>= 0.3.60),
                libwnck-3-dev (>= 3.4.0),
                libxfce4panel-2.0-dev,
                libxfconf-0-dev,
-               vala-panel-dev (>= 0.3.60),
                valac (>= 0.24.0),
                xfce4-panel-dev (>= 4.11.2),
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: https://github.com/rilian-la-te/vala-panel-appmenu
-Vcs-Git: https://github.com/rilian-la-te/vala-panel-appmenu.git
-Vcs-Browser: https://github.com/rilian-la-te/vala-panel-appmenu
+Vcs-Git: https://github.com/rilian-la-te/vala-project-packages.git
+Vcs-Browser: https://github.com/rilian-la-te/vala-project-packages
 
 Package: budgie-appmenu-applet
 Architecture: any
@@ -60,7 +59,7 @@ Description: Application Menu plugin for xfce4-panel
  the Unity protocol and libraries and provides all features found in
  the Unity implementation.
  .
- This package provides the plugin for XFCE. 
+ This package provides the plugin for Xfce.
 
 Package: mate-applet-appmenu
 Architecture: any

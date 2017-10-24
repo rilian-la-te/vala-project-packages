@@ -1,0 +1,7 @@
+*.buildinfo
+*.changes
+*.dsc
+*.upload
+*.tar.gz
+*.tar.xz
+**/debian/files

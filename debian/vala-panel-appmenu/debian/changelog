@@ -1,83 +1,18 @@
-vala-panel-appmenu (0.5.0-1) artful; urgency=medium
+vala-panel-appmenu (0.5.3-0ubuntu2) artful; urgency=medium
+
+  * Add gschema overrides to add the appropriate unity-gtk-module
+    blacklist for Budgie and MATE. (LP: #1705653)
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 30 Aug 2017 11:08:34 +0100
+
+vala-panel-appmenu (0.5.3-0ubuntu1) artful; urgency=medium
 
   * New upstream release.
 
- -- Martin Wimpress <code@flexion.org>  Mon, 15 May 2017 17:41:55 +0100
+ -- Martin Wimpress <code@flexion.org>  Mon, 14 Aug 2017 23:03:02 +0100
 
-vala-panel-appmenu (0.4.4-1) artful; urgency=medium
+vala-panel-appmenu (0.5.2-0ubuntu1) artful; urgency=medium
 
-  * New upstream release.
+  * Initial upload. (LP: #1699334)
 
- -- Martin Wimpress <code@flexion.org>  Sun, 14 May 2017 21:35:13 +0100
-
-vala-panel-appmenu (0.4.3-1) artful; urgency=medium
-
-  * New upstream release.
-
- -- Martin Wimpress <code@flexion.org>  Mon, 24 Apr 2017 02:29:41 +0100
-
-vala-panel-appmenu (0.3.5-1) zesty; urgency=medium
-
-  * New upstream release.
-
- -- Konstantin <ria.freelander@gmail.com>  Sun, 02 Apr 2017 22:00:00 +0300
-
-vala-panel-appmenu (0.3.4-1) zesty; urgency=medium
-
-  * New upstream release.
-
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 31 Mar 2017 00:11:22 +0100
-
-vala-panel-appmenu (0.2.8-1) vivid; urgency=medium
-
-  * New upstream version
-
- -- Konstantin <ria.freelander@gmail.com>  Sat, 23 May 2015 10:19:47 +0600
-
-vala-panel-appmenu (0.2.7-1) vivid; urgency=medium
-
-  * New upstream version
-
- -- Konstantin <ria.freelander@gmail.com>  Sun, 03 May 2015 10:19:47 +0600
-
-vala-panel-appmenu (0.2.6.2-1) vivid; urgency=medium
-
-  * New upstream version
-
- -- Konstantin <ria.freelander@gmail.com>  Sun, 03 May 2015 10:19:47 +0600
-
-vala-panel-appmenu (0.2.6.1-1) vivid; urgency=medium
-
-  * New upstream version
-
- -- Konstantin <ria.freelander@gmail.com>  Sat, 02 May 2015 10:19:47 +0600
-
-vala-panel-appmenu (0.2.6-1) vivid; urgency=medium
-
-  * New upstream version
-
- -- Konstantin <ria.freelander@gmail.com>  Tue, 28 Apr 2015 20:19:47 +0600
-
-vala-panel-appmenu (0.2.5-2) vivid; urgency=medium
-
-  * Fixed xfce4-panel-dev makedepend
-
- -- Konstantin <ria.freelander@gmail.com>  Mon, 27 Apr 2015 20:19:47 +0600
-
-vala-panel-appmenu (0.2.5-1) vivid; urgency=medium
-
-  * New upstream version
-
- -- Konstantin <ria.freelander@gmail.com>  Mon, 27 Apr 2015 20:19:47 +0600
-
-vala-panel-appmenu (0.2.4.1-1ubuntu1) vivid; urgency=medium
-
-  * Fixed valac builddep
-
- -- Konstantin <ria.freelander@gmail.com>  Sun, 26 Apr 2015 20:19:47 +0600
-
-vala-panel-appmenu (0.2.4.1-1) vivid; urgency=low
-
-  * Initial release
-
- -- Konstantin <ria.freelander@gmail.com>  Sat, 25 Apr 2015 00:57:09 +0600
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Sat, 15 Jul 2017 23:32:12 +0100
