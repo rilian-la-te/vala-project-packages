@@ -4,17 +4,18 @@ _disable_mate=0
 _disable_xfce=0
 _disable_vala=0
 _disable_budgie=0
-_disable_unity_gtk_module=o
 
 _opts=(
 	-DCMAKE_INSTALL_PREFIX=/usr
 	-DCMAKE_INSTALL_LIBDIR=lib
 	-DCMAKE_INSTALL_LIBEXECDIR=lib
+    -DENABLE_APPMENU_GTK_MODULE=OFF
+    -DENABLE_REGISTRAR=OFF
+    -DENABLE_JAYATANA=OFF
 )
 
 pkgname=(
 'vala-panel-appmenu-translations-git'
-'vala-panel-appmenu-registrar-git' 
 )
 
 makedepends=('cmake' 'vala' 'gtk3' 'libwnck3' 'bamf>=0.5.0' 'git')
@@ -55,32 +56,23 @@ else
 	_opts+=(-DENABLE_BUDGIE=OFF)
 fi
 
-if (("${_disable_unity_gtk_module}" == 0));then
-	_opts+=(-DENABLE_APPMENU_GTK_MODULE=ON)
-	pkgname+=('appmenu-gtk-module-git')
-	makedepends+=('gtk2')
-	msg "AppMenu GTK+ module enabled"
-else
-	_opts+=(-DENABLE_APPMENU_GTK_MODULE=OFF)
-fi
+
 msg "If you want to disable an applet, edit pkgbuild variables _disable_[applet]"
 
 _pkgbase=vala-panel-appmenu
 pkgbase=${_pkgbase}-xfce-git
 _cmakename=cmake-vala
-pkgver=0.6.92
-pkgrel=1
+pkgver=0.6.93
+pkgrel=6
 pkgdesc="AppMenu (Global Menu) plugin"
 url="https://github.com/rilian-la-te/vala-panel-appmenu"
 arch=('i686' 'x86_64')
-license=('GPL3')
+license=('LGPL3')
 
 source=("git://github.com/rilian-la-te/${_pkgbase}.git"
-        "git://github.com/rilian-la-te/${_cmakename}.git"
-		80appmenu-gtk-module)
+        "git://github.com/rilian-la-te/${_cmakename}.git")
 sha256sums=('SKIP'
-            'SKIP'
-			'4c006c4ea7b8556070ad6d35529d3a9e23da8033429e34d1824c25942d969fbc')
+            'SKIP')
 
 pkgver() {
   cd "${srcdir}/${_pkgbase}"
@@ -107,6 +99,7 @@ package_vala-panel-appmenu-xfce-git() {
   optdepends=('gtk2-ubuntu: for hiding gtk2 menus'
             'unity-gtk-module: for gtk2/gtk3 menus'
             'vala-panel-appmenu-registrar: for DBusMenu registrar' 
+			'jayatana: for Java applications support'
             'appmenu-qt: for qt4 menus'
             'appmenu-qt5: for qt5 menus')
   cd "${srcdir}/${_pkgbase}"
@@ -126,6 +119,7 @@ package_vala-panel-appmenu-valapanel-git() {
   optdepends=('gtk2-ubuntu: for hiding gtk2 menus'
             'unity-gtk-module: for gtk2/gtk3 menus'
             'vala-panel-appmenu-registrar: for DBusMenu registrar' 
+			'jayatana: for Java applications support'
             'appmenu-qt: for qt4 menus'
             'appmenu-qt5: for qt5 menus')
   cd "${srcdir}/${_pkgbase}"
@@ -143,6 +137,7 @@ package_vala-panel-appmenu-mate-git() {
   optdepends=('gtk2-ubuntu: for hiding gtk2 menus'
             'unity-gtk-module: for gtk2/gtk3 menus'
             'vala-panel-appmenu-registrar: for DBusMenu registrar' 
+			'jayatana: for Java applications support'
             'appmenu-qt: for qt4 menus'
             'appmenu-qt5: for qt5 menus')
   cd "${srcdir}/${_pkgbase}"
@@ -161,6 +156,7 @@ package_vala-panel-appmenu-budgie-git() {
   optdepends=('gtk2-ubuntu: for hiding gtk2 menus'
             'unity-gtk-module: for gtk2/gtk3 menus'
             'vala-panel-appmenu-registrar: for DBusMenu registrar' 
+			'jayatana: for Java applications support'
             'appmenu-qt: for qt4 menus'
             'appmenu-qt5: for qt5 menus')
   cd "${srcdir}/${_pkgbase}"
@@ -186,24 +182,4 @@ package_vala-panel-appmenu-translations-git() {
   rm -rf "${pkgdir}/usr/share/dbus-1"
   rm -rf "${pkgdir}/usr/share/mate-panel"
   rm -rf "${pkgdir}/usr/share/xfce4"
-}
-
-package_appmenu-gtk-module-git()
-{
-  pkgdesc="Gtk module for exporting menus"
-  depends=('gtk3' 'gtk2')
-  provides=(unity-gtk-module)
-  cd "${srcdir}/${_pkgbase}"
-  make -C "subprojects/appmenu-gtk-module" DESTDIR="${pkgdir}" install
-  install -dm755 "${pkgdir}/etc/X11/xinit/xinitrc.d/"
-  install -m755  "${srcdir}/80appmenu-gtk-module" "${pkgdir}/etc/X11/xinit/xinitrc.d/"
-}
-
-package_vala-panel-appmenu-registrar-git()
-{
-  pkgdesc="Gtk module for exporting menus"
-  provides=(vala-panel-appmenu-registrar)
-  depends=('glib2')
-  cd "${srcdir}/${_pkgbase}"
-  make -C "subprojects/registrar" DESTDIR="${pkgdir}" install
 }
